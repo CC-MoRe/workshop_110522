@@ -1,0 +1,9 @@
+name: base
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # - pytorch
+  - pip:
+      # - matplotlib
+prefix: /opt/conda
