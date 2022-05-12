@@ -6,12 +6,14 @@ alsf = 0.88
 
 
 def calc_surface_albedo(albedo_snow_old, albedo_ice, snow_depth_now, snow_depth_before):
+    # check for new snow
     if (snow_depth_now > 0) & (snow_depth_now > snow_depth_before):
         new_snow = True
     else:
         new_snow = False
+    # asign surface albedo
     if (snow_depth_now > 0) & new_snow:
-        # surface albedo is that of new snow
+        # new snow
         return alsf
     elif (snow_depth_now > 0) & (not new_snow):
         return albedo_snow_old
