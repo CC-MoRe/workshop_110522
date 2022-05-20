@@ -1,9 +1,5 @@
-# albedo of ice
 ALBEDO_ICE_CLEAN = 0.77
-
-# albedo of fresh snow
 ALBEDO_SNOW_FRESH = 0.88
-
 
 def calc_surface_albedo(
     albedo_snow_old: float,
